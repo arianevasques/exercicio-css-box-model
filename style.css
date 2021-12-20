@@ -1,0 +1,77 @@
+/*--------BOX SIZING---------*/
+
+.boxSizing {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10%;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+/*------DISPLAY BLOCK / DISPLAY INLINE----------------*/
+
+.displayBlock {
+  height: 100px;
+  width: 10px;
+  border: 1px solid green;
+  display: inline;
+  /* a div por padrão é block, colocando o inline 
+  para deixa-la na linha */
+}
+
+.displayInline {
+  width: 10px;
+  height: 100px;
+  border: 1px solid blue;
+  display: block;
+}
+
+/*----------MARGIN-------------*/
+
+* {margin: 0;} /* por padrão o navegador ja coloca 8px de margin. */
+
+.margin, section {
+  border: 1px solid pink;
+  width: 100px;
+  height: 100px;
+
+  margin: 0 2px;
+}
+
+.margin {
+  margin-bottom: 8px;
+}
+/* as margens não se somam, entende que a margem de um ao outro é de 8px */
+/* margin é o espaço de fora */
+section {
+  margin-top: 8px;
+}
+
+/*---------PADDING-----------*/
+
+.padding {
+  border: 1px solid black;
+  padding: 10px 20px 8px 25%;
+}
+/* padding coloca espaço dentro e não empurra as caixas pois é o espaço de dentro */
+.elemento {
+  border: 1px solid orange;
+  padding: 10px 20px 8px 25%;
+}
+
+/*---------BORDER / OUTLINE------------*/
+
+.border {
+  width: 100px;
+  height: 100px;
+  margin: 5% auto;
+
+  border: 20px solid purple;
+
+  box-sizing: border-box; /*responsável por não deixar que a borda ultrapasse 
+  o tamanho estipulado pelo width e heigth, deixando ela por dentro. */
+
+  outline: 4px yellow solid; /* adc uma borda em volta do border.*/
+}

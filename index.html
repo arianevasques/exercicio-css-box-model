@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Box-model</title>
+</head>
+<body>
+
+  <!-- Box sizing -->
+
+  <div class="boxSizing">
+    css é incrível!
+  </div>
+  
+
+  <!-- Display block // conteudos que por padrão são block: <div> <p> <secction> 
+  tds os headings <h1><h2> -->
+
+  <div class="displayBlock">
+    Block
+  </div>
+
+  <span class="displayInline">
+    Inline
+  </span>
+
+  <!-- Margin -->
+
+  <div class="margin">
+    Margin
+  </div>
+  <section> Elemento abaixo </section>
+
+  <!-- Padding -->
+
+  <div class="padding">
+    Padding
+  </div>
+  <div class="elemento"> 
+    Elemento  
+  </div>
+
+  <!-- BORDER E OUTLINE-->
+
+  <div class="border">
+    Border
+  </div>
+
+
+
+<!-- CODE-REVIEW -->
+
+<section class="pai">
+  <style>
+    .pai {
+      display: flex;
+      margin: 50px 0;
+    }
+    .pai .filho {
+      width: 33.3333333333333333333333333333333%;
+      height: 234px;
+      border-radius: 40px;
+    }
+    .pai .filho:first-child,
+    .pai .filho:last-child {
+      background-color: blueviolet;
+      outline: 12px solid tomato;
+    }
+    .pai .filho:nth-child(2) {
+      background-color: brown;
+      outline: 12px solid gainsboro;
+    }
+  </style>
+  <div class="filho"></div>
+  <div class="filho"></div>
+  <div class="filho"></div>
+</section>
+
+
+</body>
+</html>
